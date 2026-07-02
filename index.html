@@ -199,6 +199,12 @@
             background: rgba(0, 212, 255, 0.04);
         }
 
+        .sub-card .label {
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -233,6 +239,7 @@
             <a href="#physics">Physics</a>
             <a href="#cs">CS</a>
             <a href="#math">Mathematics</a>
+            <a href="#business">Business</a>
         </div>
     </nav>
 
@@ -346,6 +353,32 @@
                     <i class="fas fa-location-dot" style="color: var(--primary);"></i> 
                     Position vectors, direction vectors, and vector arithmetic.
                 </p>
+            </div>
+        </div>
+
+        <!-- BUSINESS SECTION -->
+        <h2 class="section-title" id="business"><i class="fas fa-chart-line"></i> Business Analytics</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-users"></i> Cohort Analytics</h3>
+                
+                <div class="sub-card">
+                    <p><strong>Retention Rate (Day N)</strong></p>
+                    <span class="math">Rₙ = (Active Players on Day N / Total Users who joined on Day 0) × 100</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">Measures what percentage of users return on a specific day after joining.</p>
+                </div>
+
+                <div class="sub-card">
+                    <p><strong>Churn Rate</strong></p>
+                    <span class="math">C = 100% - R₁</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">The percentage of users who don't return after Day 1. <span style="color: var(--primary);">R₁</span> is Day 1 retention.</p>
+                </div>
+
+                <div class="sub-card">
+                    <p><strong>Lifetime Value (LTV)</strong></p>
+                    <span class="math">LTV = Daily ARPPU / Daily Churn Rate</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">Where <span style="color: var(--primary);">ARPPU</span> is Average Revenue Per Paying User.</p>
+                </div>
             </div>
         </div>
 
