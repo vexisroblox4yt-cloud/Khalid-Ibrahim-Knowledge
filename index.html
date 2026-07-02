@@ -187,6 +187,18 @@
             border: 1px solid rgba(123, 97, 255, 0.1);
         }
 
+        .sub-card {
+            background: rgba(0, 212, 255, 0.03);
+            border-left: 2px solid var(--primary);
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+        }
+
+        .sub-card .math {
+            background: rgba(0, 212, 255, 0.04);
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -251,6 +263,33 @@
                 <p>Aerodynamic drag as a function of speed and velocity vector:</p>
                 <span class="math">F_drag = -k · speed · v_vec</span>
                 <p style="color: #666; font-size: 0.85rem; margin-top: 0.5rem;">Where <span style="color: var(--primary);">k</span> is the drag coefficient, <span style="color: var(--primary);">speed</span> is the magnitude of velocity, and <span style="color: var(--primary);">v_vec</span> is the velocity vector direction.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-cog"></i> Rigid Body Dynamics</h3>
+                
+                <div class="sub-card">
+                    <p><strong>Moment of Inertia on Rotational Axis</strong></p>
+                    <span class="math">I = ⅓ML²</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">For a rod rotating about its end.</p>
+                </div>
+
+                <div class="sub-card">
+                    <p><strong>Linear-Tangential Velocity Relation</strong></p>
+                    <span class="math">v = ωr</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">Where <span style="color: var(--primary);">v</span> is linear velocity, <span style="color: var(--primary);">ω</span> (omega) is angular velocity, and <span style="color: var(--primary);">r</span> is radius.</p>
+                </div>
+
+                <div class="sub-card">
+                    <p><strong>Torque-Angular Acceleration Relation</strong></p>
+                    <span class="math">τ = Iα</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">Where <span style="color: var(--primary);">τ</span> (tau) is torque, <span style="color: var(--primary);">I</span> is moment of inertia, and <span style="color: var(--primary);">α</span> (alpha) is angular acceleration.</p>
+                </div>
+
+                <div class="sub-card">
+                    <p><strong>Parallel Axis Theorem</strong></p>
+                    <span class="math">I = I_cm + Md²</span>
+                    <p style="color: #666; font-size: 0.85rem; margin-top: 0.3rem;">Where <span style="color: var(--primary);">I_cm</span> is the moment of inertia about the center of mass, <span style="color: var(--primary);">M</span> is mass, and <span style="color: var(--primary);">d</span> is the distance from the center of mass to the new axis.</p>
+                </div>
             </div>
         </div>
 
